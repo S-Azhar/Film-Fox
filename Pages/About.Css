@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.AboutInfo {
+  margin: 3rem;
+}
+
+.AboutInfo h2 {
+  margin: 15px;
+}
+
+.AboutInfo p {
+  font-size : 25px;
+  text-align: center;
+}
+
+button {
+  height: 60px;
+  width: 120px;
+  background-color: #3F51B5;
+  border-radius: 25px;
+  border: none;
+  font-size: 25px;
+}

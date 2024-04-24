@@ -8,62 +8,122 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="sidebar sidebarGo">
-    <img src="resource/Logo.png" alt="Logo Image" style="width: 150px">
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Tranding</li>
-        <li>Category</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  </div>
-
-  <header>
-    <div class="hamburger">
-      <i class="fa-solid fa-bars ham" style="font-size: 23px"></i>
-      <i class="fa-solid fa-x Cross" style="font-size: 25px;"></i>
-
-    </div>
-    <div class="logo">
-      <img src="resource/Logo.png" alt="Logo Image" style="width: 150px; padding-left: 20px">
+  <div class="contener">
+    <div class="sidebar sidebarGo">
+      <img src="resource/Logo.png" alt="Logo Image">
+      <nav>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-ranking-star"></i> Top Rated</a></li>
+          <li><a href="#"><!-- <i class="fa-solid fa-caret-down" style="font-size: 35px"></i> --> <!-- <i class="fa-solid fa-list"></i> --><i class="fa-solid fa-layer-group"></i> Category</a></li>
+          <li><a href="Pages/About.Html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+          <li><a href="/Pages/Contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+        </ul>
+      </nav>
     </div>
 
+    <header>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars ham" style="font-size: 23px"></i>
+        <i class="fa-solid fa-x Cross" style="font-size: 25px;"></i>
 
-    <div class="search-box">
-      <button class="btn-search"><i class="fas fa-search"></i></button>
-      <input type="text" class="input-search" placeholder="Type to Search...">
+      </div>
+      <div class="logo">
+        <img src="resource/Logo.png" alt="Logo Image">
+      </div>
+
+
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i></button>
+        <input type="text" class="input-search placeholder-hidden" placeholder="Type to Search...">
+
+      </div>
+
+
+      <div class="account">
+        <i class="fa-solid fa-user" style="font-size: 20px"></i>
+      </div>
+
+    </header>
+
+    <div class="main">
+      <h2 class="recently-w">Recently Watch</h2>
+      <div class="sliders-Container">
+        <div class="wrapper">
+          <div class="carousel">
+            <img src="/resource/Shaitan (2024).jpg" alt="img" draggable="false">
+            <img src="/resource/Eagle (2024).jpg" alt="img" draggable="false">
+            <img src="/resource/virupaksha (2023).jpg" alt="img" draggable="false">
+            <img src="/resource/Annabelle Creation (2017).jpg" alt="img" draggable="false">
+            <!-- <img src="/resource/Shaitan.jpg" alt="img" draggable="false">
+            <img src="/resource/Shaitan.jpg" alt="img" draggable="false">
+            <img src="/resource/Shaitan.jpg" alt="img" draggable="false">
+            <img src="/resource/Shaitan.jpg" alt="img" draggable="false">
+            <img src="/resource/Eagle (2024).jpg" alt="img" draggable="false"> -->
+          </div>
+          <i id="left" class="fa-solid fa-angle-left"></i>
+          <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
     </div>
+    <div class="containerInfo">
 
 
-    <div class="account">
-      <i class="fa-solid fa-user" style="font-size: 20px"></i>
+      <!--       <div class="Movie-list">
+
+  <div class="MovieItem">
+    <img src="resource/Shaitan.jpg" alt="resource/Shaitan.jpg">
+    <div class="MovieName">Shaitan</div>
+    <div class="MovieInfo">
+      Aap calls miss kar rahe hai Airtel No. 8208675202 ki sewayein shuru karne ke liye Unlimited Pack se recharge karein i.airtel.in/FDPNew Ignore if recharged
     </div>
-
-  </header>
-
-
-
-
-
-  <div class="main">
-
-  </div>
-  <div class="containerInfo">
-
-
-
-  </div>
   </div>
 
+  <div class="MovieItem">
+    <img src="resource/Shaitan.jpg" alt="resource/Shaitan.jpg">
+    <div class="MovieName">Shaitan</div>
+    <div class="MovieInfo">
+      Aap calls miss kar rahe hai Airtel No. 8208675202 ki sewayein shuru karne ke liye Unlimited Pack se recharge karein i.airtel.in/FDPNew Ignore if recharged
+    </div>
+  </div>
 
+  <div class="MovieItem">
+    <img src="resource/Shaitan.jpg" alt="resource/Shaitan.jpg">
+    <div class="MovieName">Shaitan</div>
+    <div class="MovieInfo">
+      Aap calls miss kar rahe hai Airtel No. 8208675202 ki sewayein shuru karne ke liye Unlimited Pack se recharge karein i.airtel.in/FDPNew Ignore if recharged
+    </div>
+  </div>
+
+  <div class="MovieItem">
+    <img src="resource/Shaitan.jpg" alt="resource/Shaitan.jpg">
+    <div class="MovieName">Shaitan</div>
+    <div class="MovieInfo">
+      Aap calls miss kar rahe hai Airtel No. 8208675202 ki sewayein shuru karne ke liye Unlimited Pack se recharge karein i.airtel.in/FDPNew Ignore if recharged
+    </div>
+  </div> -->
+
+      <!--<div class="songItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div> -->
+
+
+    </div>
+  </div>
+
+  </div>
 
   </div>
   <script src="script.js"></script>

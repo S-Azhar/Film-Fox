@@ -1,38 +1,3 @@
-// Ham & Cross Click & Hide Script Start.
-document.querySelector('.Cross').style.display = 'none';
-document.querySelector('.hamburger').addEventListener("click", () => {
-  document.querySelector('.sidebar').classList.toggle('sidebarGo');
-  if (document.querySelector('.sidebar').classList.contains('sidebarGo')) {
-    document.querySelector('.ham').style.display = 'inline';
-    document.querySelector('.Cross').style.display = 'none';
-  }
-  else {
-    document.querySelector('.ham').style.display = 'none';
-    setTimeout (() => {
-      document.querySelector('.Cross').style.display = 'inline'; 
-       
-    }, 350);
-  }
-})
-
-// Placeholder Hide and Show Script Start 
-document.addEventListener('DOMContentLoaded', function () {
-  const inputSearch = document.querySelector('.input-search');
-
-  inputSearch.addEventListener('focus', function () {
-    inputSearch.classList.remove('placeholder-hidden');
-  });
-
-  inputSearch.addEventListener('blur', function () {
-    if (!inputSearch.value.trim()) {
-      inputSearch.classList.add('placeholder-hidden');
-    }
-  });
-});
-
-
-// Auto Slide Loop Script Start.
-
 const carousel = document.querySelector(".carousel"),
   firstImg = carousel.querySelectorAll("img")[0],
   arrowIcons = document.querySelectorAll(".wrapper i");
