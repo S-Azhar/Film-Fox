@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Sedan", serif;
+  /* font-family: "Sedan", serif; */
   font-weight: 400;
   font-style: normal;
   background-color: gray;
@@ -14,7 +14,8 @@ body {
 }
 
 .sidebar {
-  z-index: 999; /* Or any value higher than the z-index of the elements you want it to appear above */
+  z-index: 999;
+  /* Or any value higher than the z-index of the elements you want it to appear above */
   width: 250px;
   /* Adjust the sidebar width as needed */
   position: absolute;
@@ -221,7 +222,7 @@ i {
   left: 0;
   transition: transform 0.5s ease;
   /* Add transition property for smooth sliding animation */
- 
+
 }
 
 .slide img {
@@ -268,9 +269,11 @@ i {
 }
 
 .MovieItem {
-  padding-right: 1rem;
-  width: 170px;
-  height: 275px;
+  background-color: #4F4F4F;
+  border-radius: 10px;
+  margin-right: 1rem;
+  width: 160px;
+  height: 312px;
 }
 
 .MovieItem img {
@@ -279,15 +282,36 @@ i {
   width: 160px;
 }
 
-.MovieName {
-  font-size: 1.5rem;
-  text-align: center;
+.MovieInfo {
+  padding: 2px 5px;
 }
 
-.MovieInfo {
+.Star-icon i {
+  color: #FFF800;
+  font-size: 15px;
+}
+
+.MovieName {
+  height: 44px;
+  font-size: 1rem;
+}
+
+button {
+  height: 40px;
+  width: 100%;
+  color: white;
+  background-color: #3F51B5;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+
+/* .MovieInfo {
   font-size: 13px;
   overflow-x: scroll;
-}
+ }*/
+
 
 /* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
@@ -342,16 +366,33 @@ i {
     padding-top: 2rem;
   }
 
+  .main {
+    padding: 0px;
+  }
+
+  .slide img {
+    width: calc(94% / 3);
+    /* Set the width of each slide to one-third of the container */
+    /* Ensure the height adjusts proportionally */
+    float: left;
+    /* Float the images left to display them side by side */
+    margin-left: 1rem;
+  }
+
+  .prev-btn {
+    left: 16px;
+  }
+
+  .next-btn {
+    right: 11px;
+  }
+
   .recently-w {
     margin-top: 1.5rem;
-    margin-left: 2rem;
-  }
-  
-  .slide img {
-    width: calc(100% / 3);
+    margin-left: 1rem;
   }
 
   .Movie-list {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 }
