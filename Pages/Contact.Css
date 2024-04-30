@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.costumer-Info {
+  margin: 1rem 2rem;
+}
+
+.costumer-Info
+input[type="text"],
+input[type="email"],
+textarea {
+  border-radius: 20px;
+  padding: 10px 4px;
+}
+
+.Name-Contenar
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+}
+
+.First-Name,
+.Last-Name,
+.Email-id,
+.Massage {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  margin-bottom: 1rem;
+  width: 18.75rem;
+}
+
+.costumer-Info button {
+  width: 6.25rem;
+
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+
+  /* Adjust styles for smaller screens here */
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Adjust styles for larger screens here */
+
+  .costumer-Info {
+    margin: 1rem 6rem;
+  }
+
+  .Name-Contenar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .First-Name,
+  .Last-Name {
+    width: 23.75rem;
+  }
+
+  .Email-id {
+    width: 100%;
+  }
+
+  textarea {
+    width: 49.5rem;
+  }
+
+}
