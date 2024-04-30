@@ -1,55 +1,52 @@
-.slider {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.slide {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: transform 0.5s ease;
-  /* Add transition property for smooth sliding animation */
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-.slide img {
-  width: 100%;
-  height: 100%;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.slide:target {
-  z-index: 1;
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
-.prev-btn,
-.next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+header h1, footer p {
+    text-align: center;
 }
 
-.prev-btn {
-  left: 10px;
+section {
+    padding: 50px 0;
 }
 
-.next-btn {
-  right: 10px;
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
+/* Specific Styles */
+#mission {
+    background-color: #f4f4f4;
+}
 
-@media only screen and (min-width: 768px) {
-  .slide img {
-    width: calc(100% / 3 );
-  }
+#contact {
+    background-color: #e6e6e6;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
 }
