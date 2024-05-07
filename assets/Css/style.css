@@ -83,12 +83,11 @@ header {
   position: absolute;
   font-size: 25px;
   left: 10px;
-  /* Adjusted left position for desktop */
   top: 10px;
-  /* Adjusted top position for desktop */
   font-weight: 900;
-  /* Set font-weight to 900 */
+  z-index: 1000; /* Add this line */
 }
+
 
 .fa-x {
   margin-left: 210px;
