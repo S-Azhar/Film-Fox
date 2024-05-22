@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="/assets/Css/Movie info page.Css">
+</head>
+
+<body>
+  <div class="contener">
+    <div class="sidebar sidebarGo">
+      <img src="/resource/Images/Logo.png" alt="Logo Image">
+      <nav>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-ranking-star"></i> Top Rated</a></li>
+          <li><a href="#"><i class="fa-solid fa-layer-group"></i> Category</a></li>
+          <li><a href="Pages/About.Html"><i class="fa-solid fa-circle-info"></i> About</a></li>
+          <li><a href="Pages/Contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <header>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars ham" style="font-size: 23px"></i>
+        <i class="fa-solid fa-x Cross" style="font-size: 25px;"></i>
+      </div>
+      <div class="logo">
+        <img src="resource/Images/Logo.png" alt="Logo Image">
+      </div>
+
+      <div class="search-box">
+        <button class="btn-search"><i class="fas fa-search"></i></button>
+        <input type="text" class="input-search placeholder-hidden" placeholder="Type to Search...">
+      </div>
+
+
+      <div class="account">
+        <i class="fa-solid fa-user" style="font-size: 20px"></i>
+      </div>
+
+    </header>
+    
+      <div class="container">
+
+
+
+    <div class="training-list">
+      <h2>Tranding Now</h2>
+    </div>
+
+    <div class="songList">
+      <div class="MovieItemContainer">
+
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+        <div class="MovieItem">
+          <img alt="1">
+          <span class="songName">Let me Love You</span>
+          <span class="songlistplay"></span>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Ham & Cross Click & Hide Script Start.
+      document.querySelector('.Cross').style.display = 'none';
+      document.querySelector('.hamburger').addEventListener("click", () => {
+        document.querySelector('.sidebar').classList.toggle('sidebarGo');
+        if (document.querySelector('.sidebar').classList.contains('sidebarGo')) {
+          document.querySelector('.ham').style.display = 'inline';
+          document.querySelector('.Cross').style.display = 'none';
+        }
+        else {
+          document.querySelector('.ham').style.display = 'none';
+          setTimeout(() => {
+            document.querySelector('.Cross').style.display = 'inline';
+      
+          }, 350);
+        }
+      })
+      
+      // Placeholder Hide and Show Script Start 
+      document.addEventListener('DOMContentLoaded', function() {
+        const inputSearch = document.querySelector('.input-search');
+      
+        inputSearch.addEventListener('focus', function() {
+          inputSearch.classList.remove('placeholder-hidden');
+        });
+      
+        inputSearch.addEventListener('blur', function() {
+          if (!inputSearch.value.trim()) {
+            inputSearch.classList.add('placeholder-hidden');
+          }
+        });
+      });
+    </script>
+    
+    <script src="/assets/Js/Movie info page.js"></script>
+</body>
+
+</html>
