@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Trending Now Section */
-.training-list h2 {
-  font-size: 1.75rem;
-  margin-bottom: 22px;
-}
-
 .container {
   /*  min-height: 72vh; */
   font-family: 'Varela Round', sans-serif;

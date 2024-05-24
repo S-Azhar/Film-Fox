@@ -164,15 +164,7 @@ const playSong = (index) => {
   masterPlay.classList.remove('fa-play-circle');
   masterPlay.classList.add('fa-pause-circle');
   
-  // Show GIF animation
-  gif.style.opacity = 1;
+
 };
 
-// Add click event listener to each song item image
-MovieItems.forEach((element, i) => {
-  let img = element.querySelector("img");
-  img.src = songs[i].coverPath;
-  img.addEventListener('click', () => {
-    playSong(i);
-  });
-});
+

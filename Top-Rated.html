@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <link rel="stylesheet" href="assets/Css/Top-Rated.Css">
   <title></title>
 </head>
@@ -44,41 +44,107 @@
       </div>
 
     </header>
-    
-    
-        <script>
-      // Ham & Cross Click & Hide Script Start.
-      document.querySelector('.Cross').style.display = 'none';
-      document.querySelector('.hamburger').addEventListener("click", () => {
-        document.querySelector('.sidebar').classList.toggle('sidebarGo');
-        if (document.querySelector('.sidebar').classList.contains('sidebarGo')) {
-          document.querySelector('.ham').style.display = 'inline';
-          document.querySelector('.Cross').style.display = 'none';
-        }
-        else {
-          document.querySelector('.ham').style.display = 'none';
-          setTimeout(() => {
-            document.querySelector('.Cross').style.display = 'inline';
+
+    <div class="top-rated">
+      <h2>Top Rated</h2>
+    </div>
+
+    <div class="Movie-list">
+
+      <div class="MovieItem">
+       
+          <img src="resource/Images/Movie Banners/Shaitan (2024).jpg" alt="Shaitan 2024 Movie">
+          <span class="MovieInfo">
+            <span class="MovieName">Shaitan</span><br>
+            <span class="Star-icon">
+              <i class="fa-solid fa-star"></i> 5.7
+            </span>
+            
+           <p>Shaitan movie is belong from horror catagory.
+           The base of movie is black magic. It's not too horror also the movies ending is disposing for me. I have more experienced from movie.</p>
+          </span>
+        
+      </div>
       
-          }, 350);
-        }
-      })
       
-      // Placeholder Hide and Show Script Start 
-      document.addEventListener('DOMContentLoaded', function() {
-        const inputSearch = document.querySelector('.input-search');
       
-        inputSearch.addEventListener('focus', function() {
-          inputSearch.classList.remove('placeholder-hidden');
-        });
+      <div class="MovieItem">
+        <img src="resource/Images/Movie Banners/Eagle (2024).jpg" alt="Eagle 2024 Movie">
+        <span class="MovieInfo">
+          <span class="MovieName">Eagle</span><br>
+          <span class="Star-icon">
+            <i class="fa-solid fa-star"></i> 7.5
+          </span>
+          
+          <p>Shaitan movie is belong from horror catagory.
+            The base of movie is black magic. It's not too horror also the movies ending is disposing for me. I have more experienced from movie.</p>
+        </span>
+        
+      </div>
       
-        inputSearch.addEventListener('blur', function() {
-          if (!inputSearch.value.trim()) {
-            inputSearch.classList.add('placeholder-hidden');
+      
+      <div class="MovieItem">
+        <img src="resource/Images/Movie Banners/virupaksha (2023).jpg" alt="Virupaksha 2023 Movie">
+        <span class="MovieInfo">
+          <span class="MovieName">virupaksha (2023)</span><br>
+          <span class="Star-icon">
+            <i class="fa-solid fa-star"></i> 7.2
+          </span>
+      
+          <p>Shaitan movie is belong from horror catagory.
+            The base of movie is black magic. It's not too horror also the movies ending is disposing for me. I have more experienced from movie.</p>
+        </span>
+      </div>
+      
+      
+      <div class="MovieItem">
+        <img src="resource/Images/Movie Banners/Annabelle Creation (2017).jpg" alt="Annabelle Creation 2017 Movie">
+        <span class="MovieInfo">
+          <span class="MovieName">virupaksha (2023)</span><br>
+          <span class="Star-icon">
+            <i class="fa-solid fa-star"></i> 6
+          </span>
+      
+          <p>Shaitan movie is belong from horror catagory.
+            The base of movie is black magic. It's not too horror also the movies ending is disposing for me. I have more experienced from movie.</p>
+        </span>
+      </div>
+    </div>
+
+
+      <script>
+        // Ham & Cross Click & Hide Script Start.
+        document.querySelector('.Cross').style.display = 'none';
+        document.querySelector('.hamburger').addEventListener("click", () => {
+          document.querySelector('.sidebar').classList.toggle('sidebarGo');
+          if (document.querySelector('.sidebar').classList.contains('sidebarGo')) {
+            document.querySelector('.ham').style.display = 'inline';
+            document.querySelector('.Cross').style.display = 'none';
           }
+          else {
+            document.querySelector('.ham').style.display = 'none';
+            setTimeout(() => {
+              document.querySelector('.Cross').style.display = 'inline';
+
+            }, 350);
+          }
+        })
+
+        // Placeholder Hide and Show Script Start 
+        document.addEventListener('DOMContentLoaded', function() {
+          const inputSearch = document.querySelector('.input-search');
+
+          inputSearch.addEventListener('focus', function() {
+            inputSearch.classList.remove('placeholder-hidden');
+          });
+
+          inputSearch.addEventListener('blur', function() {
+            if (!inputSearch.value.trim()) {
+              inputSearch.classList.add('placeholder-hidden');
+            }
+          });
         });
-      });
-    </script>
+      </script>
 </body>
 
 </html>
